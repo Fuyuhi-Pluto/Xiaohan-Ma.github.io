@@ -1,106 +1,130 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简历 - [你的姓名]</title>
+    <meta name="description" content="Curriculum Vitae of Xiaohan Ma - Ph.D. Candidate in Astronomy at Boston University">
+    <title>CV - Xiaohan Ma</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">[你的姓名]</a>
-            <ul class="nav-menu">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="research.html">研究</a></li>
-                <li><a href="publications.html">出版物</a></li>
-                <li><a href="cv.html" class="active">简历</a></li>
-                <li><a href="contact.html">联系</a></li>
-            </ul>
-            <button class="nav-toggle">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Xiaohan Ma</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main class="main-content page-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Curriculum Vitae</h1>
+            <a href="files/CV-Xiaohan-Postdoc2025.pdf" class="btn btn-primary" download>
+                📥 Download PDF Version
+            </a>
+        </div>
+    </section>
+
+    <main class="section">
         <div class="container cv-container">
-            <header class="page-header">
-                <h1>简历 / Curriculum Vitae</h1>
-                <a href="files/CV.pdf" class="btn btn-primary" download>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    下载 PDF 版本
-                </a>
-            </header>
-
-            <!-- 教育背景 -->
+            
+            <!-- Personal Information -->
             <section class="cv-section">
-                <h2 class="cv-section-title">教育背景</h2>
-                
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div>
-                            <h3>[博士学位]</h3>
-                            <p class="institution">[大学名称], [系所]</p>
-                        </div>
-                        <div class="cv-date">[开始年份] - [结束年份]</div>
+                <h2 class="cv-section-title">Personal Information</h2>
+                <div class="cv-info-grid">
+                    <div class="cv-info-item">
+                        <strong>Name:</strong> Xiaohan Ma
                     </div>
-                    <div class="cv-entry-content">
-                        <p><strong>论文题目:</strong> [博士论文标题]</p>
-                        <p><strong>导师:</strong> [导师姓名]</p>
-                        <p><strong>研究方向:</strong> [具体研究方向]</p>
+                    <div class="cv-info-item">
+                        <strong>Email:</strong> <a href="mailto:xhma@bu.edu">xhma@bu.edu</a>
                     </div>
-                </div>
-
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div>
-                            <h3>[硕士学位]</h3>
-                            <p class="institution">[大学名称], [系所]</p>
-                        </div>
-                        <div class="cv-date">[年份] - [年份]</div>
+                    <div class="cv-info-item">
+                        <strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-0007-757X" target="_blank">0000-0003-0007-757X</a>
                     </div>
-                    <div class="cv-entry-content">
-                        <p><strong>GPA:</strong> X.XX/4.0</p>
-                    </div>
-                </div>
-
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div>
-                            <h3>[本科学位]</h3>
-                            <p class="institution">[大学名称], [专业]</p>
-                        </div>
-                        <div class="cv-date">[年份] - [年份]</div>
+                    <div class="cv-info-item">
+                        <strong>Status:</strong> Seeking Postdoctoral Positions
                     </div>
                 </div>
             </section>
 
-            <!-- 研究经历 -->
+            <!-- Education -->
             <section class="cv-section">
-                <h2 class="cv-section-title">研究经历</h2>
+                <h2 class="cv-section-title">Education</h2>
                 
                 <div class="cv-entry">
                     <div class="cv-entry-header">
                         <div>
-                            <h3>[职位名称，如：博士后研究员]</h3>
-                            <p class="institution">[机构名称], [实验室/课题组]</p>
+                            <h3>Ph.D. in Astronomy</h3>
+                            <p class="institution">Boston University, Department of Astronomy</p>
                         </div>
-                        <div class="cv-date">[年份] - 至今</div>
+                        <div class="cv-date">2020 - 2025 (Expected)</div>
                     </div>
                     <div class="cv-entry-content">
-                        <p><strong>导师/PI:</strong> [导师姓名]</p>
+                        <p><strong>Dissertation:</strong> Plasma Instabilities and Turbulence in the Heliosphere</p>
+                        <p><strong>Advisor:</strong> Prof. Merav Opher</p>
+                        <p><strong>Research Focus:</strong> Three-dimensional MHD simulations of Rayleigh-Taylor and Kelvin-Helmholtz instabilities in the heliosheath; coupling mechanisms and turbulence generation</p>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-header">
+                        <div>
+                            <h3>M.S. in Space Physics</h3>
+                            <p class="institution">Peking University, School of Earth and Space Sciences</p>
+                        </div>
+                        <div class="cv-date">2017 - 2020</div>
+                    </div>
+                    <div class="cv-entry-content">
+                        <p><strong>Thesis:</strong> Solar Wind Dynamic Pressure Effects on Magnetospheric Electrons</p>
+                        <p><strong>Advisor:</strong> Prof. Qiugang Zong</p>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-header">
+                        <div>
+                            <h3>B.S. in Space Physics</h3>
+                            <p class="institution">Peking University, School of Earth and Space Sciences</p>
+                        </div>
+                        <div class="cv-date">2013 - 2017</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Experience -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Research Experience</h2>
+                
+                <div class="cv-entry">
+                    <div class="cv-entry-header">
+                        <div>
+                            <h3>Graduate Research Assistant</h3>
+                            <p class="institution">Boston University, Center for Space Physics</p>
+                        </div>
+                        <div class="cv-date">2020 - Present</div>
+                    </div>
+                    <div class="cv-entry-content">
+                        <p><strong>PI:</strong> Prof. Merav Opher</p>
                         <ul>
-                            <li>[主要研究内容1]</li>
-                            <li>[主要研究内容2]</li>
-                            <li>[主要成果]</li>
+                            <li>Developed and executed 3D MHD simulations of plasma instabilities in the heliosheath using BATS-R-US code</li>
+                            <li>Discovered and confirmed the presence of Kelvin-Helmholtz instability in the heliosheath</li>
+                            <li>Modeled the quasi-periodic coupling and decoupling of RT and KH instabilities</li>
+                            <li>Demonstrated that nonlinear saturation of instabilities drives turbulence and heliotail asymmetry</li>
+                            <li>Applied multi-ion MHD models to study the effects of pickup ions on instability growth rates</li>
                         </ul>
                     </div>
                 </div>
@@ -108,220 +132,318 @@
                 <div class="cv-entry">
                     <div class="cv-entry-header">
                         <div>
-                            <h3>[之前的研究职位]</h3>
-                            <p class="institution">[机构名称]</p>
+                            <h3>Visiting Scholar</h3>
+                            <p class="institution">University of California, Los Angeles (UCLA)</p>
                         </div>
-                        <div class="cv-date">[年份] - [年份]</div>
+                        <div class="cv-date">Summer 2019</div>
                     </div>
                     <div class="cv-entry-content">
+                        <p><strong>Host:</strong> Prof. Jacob Bortnik</p>
                         <ul>
-                            <li>[研究内容]</li>
+                            <li>Developed neural network models for forecasting plasmaspheric electron density</li>
+                            <li>Achieved 97% accuracy for quiet periods and 90% for disturbed periods</li>
+                            <li>Explored 2D spatial modeling of the warm plasma cloak dynamics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cv-entry">
+                    <div class="cv-entry-header">
+                        <div>
+                            <h3>Graduate Research Assistant</h3>
+                            <p class="institution">Peking University, Institute of Space Physics and Applied Technology</p>
+                        </div>
+                        <div class="cv-date">2017 - 2020</div>
+                    </div>
+                    <div class="cv-entry-content">
+                        <p><strong>PI:</strong> Prof. Qiugang Zong</p>
+                        <ul>
+                            <li>Conducted statistical studies of energetic electron dynamics in Earth's magnetosphere using Van Allen Probes data</li>
+                            <li>Analyzed drift echo phenomena induced by solar wind dynamic pressure variations</li>
+                            <li>Investigated substorm triggering mechanisms following interplanetary shock impacts</li>
+                            <li>Identified phase space density as the key parameter controlling electron enhancement/dropout patterns</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- 荣誉与奖励 -->
+            <!-- Honors & Awards -->
             <section class="cv-section">
-                <h2 class="cv-section-title">荣誉与奖励</h2>
+                <h2 class="cv-section-title">Honors & Awards</h2>
                 
                 <div class="cv-list">
                     <div class="cv-list-item">
                         <div class="cv-list-content">
-                            <strong>[奖项名称]</strong>
-                            <p>[颁发机构]</p>
+                            <strong>NASA Earth and Space Science Fellowship (NESSF)</strong>
+                            <p>NASA | $45,000 annually for 3 years</p>
                         </div>
-                        <div class="cv-date">[年份]</div>
+                        <div class="cv-date">2021 - 2024</div>
                     </div>
+                    
                     <div class="cv-list-item">
                         <div class="cv-list-content">
-                            <strong>[奖学金名称]</strong>
-                            <p>[金额] | [颁发机构]</p>
+                            <strong>Dean's Fellowship</strong>
+                            <p>Boston University Graduate School</p>
                         </div>
-                        <div class="cv-date">[年份]</div>
+                        <div class="cv-date">2020</div>
                     </div>
+                    
                     <div class="cv-list-item">
                         <div class="cv-list-content">
-                            <strong>[其他荣誉]</strong>
-                            <p>[说明]</p>
+                            <strong>Outstanding Graduate Award</strong>
+                            <p>Peking University</p>
                         </div>
-                        <div class="cv-date">[年份]</div>
+                        <div class="cv-date">2020</div>
+                    </div>
+                    
+                    <div class="cv-list-item">
+                        <div class="cv-list-content">
+                            <strong>Merit Student</strong>
+                            <p>Peking University</p>
+                        </div>
+                        <div class="cv-date">2018, 2019</div>
+                    </div>
+                    
+                    <div class="cv-list-item">
+                        <div class="cv-list-content">
+                            <strong>Academic Scholarship</strong>
+                            <p>Peking University</p>
+                        </div>
+                        <div class="cv-date">2014, 2015, 2016, 2018</div>
+                    </div>
+                    
+                    <div class="cv-list-item">
+                        <div class="cv-list-content">
+                            <strong>Outstanding Graduate of Beijing</strong>
+                            <p>Beijing Municipal Education Commission</p>
+                        </div>
+                        <div class="cv-date">2017</div>
                     </div>
                 </div>
             </section>
 
-            <!-- 资助项目 -->
+            <!-- Publications Summary -->
             <section class="cv-section">
-                <h2 class="cv-section-title">研究资助</h2>
-                
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div>
-                            <h3>[项目名称]</h3>
-                            <p class="institution">[资助机构]</p>
-                        </div>
-                        <div class="cv-date">[年份] - [年份]</div>
+                <h2 class="cv-section-title">Publications Summary</h2>
+                <div class="pub-summary">
+                    <div class="pub-stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">First-Author Papers</div>
                     </div>
-                    <div class="cv-entry-content">
-                        <p><strong>项目编号:</strong> [编号]</p>
-                        <p><strong>资助金额:</strong> ¥XXX,XXX 或 $XX,XXX</p>
-                        <p><strong>角色:</strong> [PI / Co-PI / 参与者]</p>
+                    <div class="pub-stat-card">
+                        <div class="stat-number">~50</div>
+                        <div class="stat-label">Citations</div>
+                    </div>
+                    <div class="pub-stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">h-index</div>
+                    </div>
+                </div>
+                <p class="note">For complete publication list, see <a href="publications.html">Publications</a> page or <a href="https://orcid.org/0000-0003-0007-757X" target="_blank">ORCID profile</a></p>
+            </section>
+
+            <!-- Conference Presentations Summary -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Conference Presentations</h2>
+                
+                <div class="cv-subsection">
+                    <h3>Oral Presentations (5)</h3>
+                    <ul class="simple-list">
+                        <li>Solar Science Meeting 2025 (Online, January 2025)</li>
+                        <li>Dartmouth Heliophysics Research Meeting (Dartmouth College, NH, January 2025)</li>
+                        <li>SHIELD DRIVE Science Center Semi-Annual Meeting (Online, January 2025)</li>
+                        <li>EGU General Assembly 2020 (Online, May 2020)</li>
+                        <li>Asia Oceania Geosciences Society Annual Meeting 2018 (Honolulu, HI, June 2018)</li>
+                    </ul>
+                </div>
+
+                <div class="cv-subsection">
+                    <h3>Poster Presentations (6)</h3>
+                    <ul class="simple-list">
+                        <li>AGU Fall Meeting 2024 (Washington, D.C., December 2024)</li>
+                        <li>AGU Fall Meeting 2023 (San Francisco, CA, December 2023)</li>
+                        <li>AGU Fall Meeting 2022 (Chicago, IL, December 2022)</li>
+                        <li>SHINE Workshop 2022 (Coastal Georgia Center, GA, July 2022)</li>
+                        <li>AGU Fall Meeting 2019 (San Francisco, CA, December 2019)</li>
+                        <li>CGU Annual Meeting 2017 (Taipei, Taiwan, May 2017)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Academic Service -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Academic Service</h2>
+                
+                <div class="cv-subsection">
+                    <h3>Peer Reviewer</h3>
+                    <ul class="simple-list">
+                        <li>Journal of Geophysical Research: Space Physics</li>
+                        <li>The Astrophysical Journal</li>
+                        <li>Geophysical Research Letters</li>
+                    </ul>
+                </div>
+
+                <div class="cv-subsection">
+                    <h3>Professional Memberships</h3>
+                    <ul class="simple-list">
+                        <li>American Geophysical Union (AGU)</li>
+                        <li>American Astronomical Society (AAS)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Technical Skills</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">IDL</span>
+                            <span class="skill-tag">Fortran</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">C</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Tools & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">BATS-R-US</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux/Unix</span>
+                            <span class="skill-tag">HPC Systems</span>
+                            <span class="skill-tag">LaTeX</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Data Analysis</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">NumPy/SciPy</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">SpacePy</span>
+                            <span class="skill-tag">Machine Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Research Methods</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">3D MHD Simulations</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                            <span class="skill-tag">Spectral Analysis</span>
+                            <span class="skill-tag">Data Visualization</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Chinese (Native)</span>
+                            <span class="skill-tag">English (Fluent)</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 教学经历 -->
+            <!-- Teaching Experience -->
             <section class="cv-section">
-                <h2 class="cv-section-title">教学经历</h2>
+                <h2 class="cv-section-title">Teaching Experience</h2>
                 
                 <div class="cv-entry">
                     <div class="cv-entry-header">
                         <div>
-                            <h3>[课程名称]</h3>
-                            <p class="institution">[大学名称]</p>
+                            <h3>Teaching Assistant</h3>
+                            <p class="institution">Boston University</p>
                         </div>
-                        <div class="cv-date">[学期] [年份]</div>
+                        <div class="cv-date">2020 - 2021</div>
                     </div>
                     <div class="cv-entry-content">
-                        <p><strong>角色:</strong> [讲师/助教]</p>
-                        <p><strong>学生人数:</strong> ~XX人</p>
                         <ul>
-                            <li>[教学内容/职责]</li>
+                            <li>Assisted in undergraduate astronomy courses</li>
+                            <li>Held office hours and graded assignments</li>
+                            <li>Mentored students in research projects</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- 学术服务 -->
+            <!-- References -->
             <section class="cv-section">
-                <h2 class="cv-section-title">学术服务</h2>
-                
-                <div class="cv-subsection">
-                    <h3>审稿人</h3>
-                    <ul class="simple-list">
-                        <li>[期刊名称1]</li>
-                        <li>[期刊名称2]</li>
-                        <li>[会议名称1]</li>
-                    </ul>
-                </div>
-
-                <div class="cv-subsection">
-                    <h3>会议组织</h3>
-                    <ul class="simple-list">
-                        <li>[角色], [会议名称], [年份]</li>
-                    </ul>
-                </div>
-
-                <div class="cv-subsection">
-                    <h3>学术团体会员</h3>
-                    <ul class="simple-list">
-                        <li>[学术组织名称]</li>
-                        <li>[专业协会名称]</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- 指导学生 -->
-            <section class="cv-section">
-                <h2 class="cv-section-title">指导学生</h2>
-                
-                <div class="cv-subsection">
-                    <h3>研究生</h3>
-                    <ul class="simple-list">
-                        <li>[学生姓名], [学位类型], [年份-年份] (如适用)</li>
-                    </ul>
-                </div>
-
-                <div class="cv-subsection">
-                    <h3>本科生</h3>
-                    <ul class="simple-list">
-                        <li>[学生姓名], [项目名称], [年份]</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- 技能 -->
-            <section class="cv-section">
-                <h2 class="cv-section-title">专业技能</h2>
-                
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3>编程语言</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">MATLAB</span>
-                            <span class="skill-tag">C++</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3>工具与框架</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3>实验技术</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">[技术1]</span>
-                            <span class="skill-tag">[技术2]</span>
-                            <span class="skill-tag">[技术3]</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3>语言</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">中文 (母语)</span>
-                            <span class="skill-tag">英语 (流利)</span>
-                            <span class="skill-tag">[其他语言]</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 参考人 -->
-            <section class="cv-section">
-                <h2 class="cv-section-title">推荐人</h2>
-                <p class="note">可根据要求提供</p>
+                <h2 class="cv-section-title">References</h2>
+                <p class="note">Available upon request</p>
                 
                 <div class="references-grid">
                     <div class="reference-card">
-                        <h4>Prof. [姓名]</h4>
-                        <p>[职位]</p>
-                        <p>[机构]</p>
-                        <p>📧 email@university.edu</p>
+                        <h4>Prof. Merav Opher</h4>
+                        <p>Professor of Astronomy</p>
+                        <p>Boston University</p>
+                        <p>📧 mopher@bu.edu</p>
                     </div>
+                    
                     <div class="reference-card">
-                        <h4>Prof. [姓名]</h4>
-                        <p>[职位]</p>
-                        <p>[机构]</p>
-                        <p>📧 email@university.edu</p>
+                        <h4>Prof. Qiugang Zong</h4>
+                        <p>Professor of Space Physics</p>
+                        <p>Peking University</p>
+                        <p>📧 qgzong@pku.edu.cn</p>
+                    </div>
+                    
+                    <div class="reference-card">
+                        <h4>Dr. Marc Kornbleuth</h4>
+                        <p>Research Scientist</p>
+                        <p>Boston University</p>
+                        <p>📧 mkornble@bu.edu</p>
                     </div>
                 </div>
             </section>
+
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>联系方式</h4>
-                    <p>📧 your.email@university.edu</p>
+                <div class="footer-info">
+                    <h3>Xiaohan Ma</h3>
+                    <p>Ph.D. Candidate in Astronomy</p>
+                    <p>Boston University</p>
+                    <p>Email: xhma@bu.edu</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://orcid.org/0000-0003-0007-757X" target="_blank" aria-label="ORCID">
+                            <span>ORCID</span>
+                        </a>
+                        <a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar">
+                            <span>Scholar</span>
+                        </a>
+                        <a href="https://github.com/Fuyuhi-Pluto" target="_blank" aria-label="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 [你的姓名]</p>
+                <p>&copy; 2024 Xiaohan Ma. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
