@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出版物 - [你的姓名]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">[你的姓名]</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="research.html">研究</a></li>
+                <li><a href="publications.html" class="active">出版物</a></li>
+                <li><a href="cv.html">简历</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content page-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>出版物</h1>
+                <p class="page-intro">
+                    以下是我的学术出版物列表。标记为<span class="author-highlight">粗体</span>的是我作为第一作者或通讯作者的论文。
+                </p>
+                <div class="publication-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">[X]</span>
+                        <span class="stat-label">总论文数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">[Y]</span>
+                        <span class="stat-label">第一作者论文</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">[Z]</span>
+                        <span class="stat-label">引用次数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">[H]</span>
+                        <span class="stat-label">H-index</span>
+                    </div>
+                </div>
+                <div class="external-profiles">
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="profile-link">
+                        📚 Google Scholar
+                    </a>
+                    <a href="https://orcid.org/YOUR_ORCID" target="_blank" class="profile-link">
+                        🆔 ORCID
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Your_Profile" target="_blank" class="profile-link">
+                        🔬 ResearchGate
+                    </a>
+                </div>
+            </header>
+
+            <!-- 期刊论文 -->
+            <section class="publications-section">
+                <h2 class="section-title">期刊论文</h2>
+                
+                <!-- 2024 -->
+                <div class="year-group">
+                    <h3 class="year-title">2024</h3>
+                    
+                    <article class="publication-entry">
+                        <div class="pub-number">[1]</div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">[论文完整标题：应该清晰地描述研究内容]</h4>
+                            <p class="pub-authors">
+                                <strong class="me">你的姓名</strong>, 合作者1, 合作者2, 合作者3
+                            </p>
+                            <p class="pub-venue">
+                                <em>[期刊名称全称]</em>, Volume XX, Issue YY, Pages ZZ-ZZ (2024)
+                                <span class="impact-factor">IF: X.XX</span>
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link pdf">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="12" y1="18" x2="12" y2="12"></line>
+                                        <line x1="9" y1="15" x2="15" y2="15"></line>
+                                    </svg>
+                                    PDF
+                                </a>
+                                <a href="#" class="pub-link doi">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                    </svg>
+                                    DOI
+                                </a>
+                                <a href="#" class="pub-link code">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#" class="pub-link data">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg>
+                                    Data
+                                </a>
+                            </div>
+                            <div class="pub-abstract">
+                                <button class="abstract-toggle">显示摘要 ▼</button>
+                                <div class="abstract-content">
+                                    <p>[论文摘要内容。简要描述研究背景、方法、主要发现和结论。]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-entry">
+                        <div class="pub-number">[2]</div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">[第二篇论文标题]</h4>
+                            <p class="pub-authors">
+                                合作者1, <strong class="me">你的姓名*</strong>, 合作者2
+                                <span class="corresponding">(*通讯作者)</span>
+                            </p>
+                            <p class="pub-venue">
+                                <em>[期刊名称]</em>, Volume XX, Pages YY-ZZ (2024)
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link pdf">PDF</a>
+                                <a href="#" class="pub-link doi">DOI</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 2023 -->
+                <div class="year-group">
+                    <h3 class="year-title">2023</h3>
+                    
+                    <article class="publication-entry">
+                        <div class="pub-number">[3]</div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">[2023年论文标题]</h4>
+                            <p class="pub-authors">
+                                <strong class="me">你的姓名</strong>, 合作者1, 合作者2
+                            </p>
+                            <p class="pub-venue">
+                                <em>[期刊名称]</em>, Volume XX, Pages YY-ZZ (2023)
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link pdf">PDF</a>
+                                <a href="#" class="pub-link doi">DOI</a>
+                                <a href="#" class="pub-link code">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 会议论文 -->
+            <section class="publications-section">
+                <h2 class="section-title">会议论文</h2>
+                
+                <div class="year-group">
+                    <h3 class="year-title">2024</h3>
+                    
+                    <article class="publication-entry conference">
+                        <div class="pub-number">[C1]</div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">[会议论文标题]</h4>
+                            <p class="pub-authors">
+                                <strong class="me">你的姓名</strong>, 合作者1
+                            </p>
+                            <p class="pub-venue">
+                                <em>[会议全称 (会议简称)]</em>, [地点], [日期] (2024)
+                                <span class="acceptance-rate">接收率: XX%</span>
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link pdf">PDF</a>
+                                <a href="#" class="pub-link slides">Slides</a>
+                                <a href="#" class="pub-link video">Video</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 预印本 -->
+            <section class="publications-section">
+                <h2 class="section-title">预印本 & 审稿中</h2>
+                
+                <article class="publication-entry preprint">
+                    <div class="pub-number">[P1]</div>
+                    <div class="pub-content">
+                        <h4 class="pub-title">[预印本标题]</h4>
+                        <p class="pub-authors">
+                            <strong class="me">你的姓名</strong>, 合作者1, 合作者2
+                        </p>
+                        <p class="pub-venue">
+                            <em>bioRxiv/arXiv</em> (2024)
+                            <span class="status-badge under-review">审稿中</span>
+                        </p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link pdf">Preprint</a>
+                            <a href="#" class="pub-link code">Code</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 其他出版物 -->
+            <section class="publications-section">
+                <h2 class="section-title">其他出版物</h2>
+                
+                <article class="publication-entry other">
+                    <div class="pub-number">[O1]</div>
+                    <div class="pub-content">
+                        <h4 class="pub-title">[书籍章节/综述/专利等标题]</h4>
+                        <p class="pub-authors">
+                            <strong class="me">你的姓名</strong>, 合作者
+                        </p>
+                        <p class="pub-venue">
+                            [出版信息]
+                        </p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">链接</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 海报和演讲 -->
+            <section class="publications-section">
+                <h2 class="section-title">会议演讲与海报</h2>
+                
+                <div class="presentations-list">
+                    <div class="presentation-item">
+                        <div class="presentation-type oral">口头报告</div>
+                        <div class="presentation-content">
+                            <h4>"[演讲标题]"</h4>
+                            <p>[会议名称], [地点], [日期]</p>
+                        </div>
+                    </div>
+                    
+                    <div class="presentation-item">
+                        <div class="presentation-type poster">海报展示</div>
+                        <div class="presentation-content">
+                            <h4>"[海报标题]"</h4>
+                            <p>[会议名称], [地点], [日期]</p>
+                            <a href="#" class="text-link">查看海报</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>📧 your.email@university.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>学术档案</h4>
+                    <p><a href="https://scholar.google.com" target="_blank">Google Scholar</a></p>
+                    <p><a href="https://orcid.org" target="_blank">ORCID</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 [你的姓名]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[你的姓名] - 学术个人网站 | 研究方向：[你的研究领域]">
+    <meta name="keywords" content="学术研究, postdoc, [你的研究关键词]">
+    <title>[你的姓名] - 学术主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">[你的姓名]</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="research.html">研究</a></li>
+                <li><a href="publications.html">出版物</a></li>
+                <li><a href="cv.html">简历</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">你好，我是</span>
+                        <span class="name">[你的姓名]</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="position">[博士生 / 博士后研究员]</span> | 
+                        <span class="institution">[所属大学/研究所]</span>
+                    </p>
+                    <p class="hero-description">
+                        我的研究专注于<strong>[具体研究方向]</strong>，特别关注<strong>[具体研究问题]</strong>。
+                        我使用<strong>[研究方法/技术]</strong>来探索[研究目标]。
+                    </p>
+                    <div class="hero-links">
+                        <a href="mailto:your.email@university.edu" class="btn btn-primary">联系我</a>
+                        <a href="files/CV.pdf" class="btn btn-secondary" download>下载简历</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <!-- 将你的照片放在 images/profile.jpg -->
+                        <img src="images/profile.jpg" alt="[你的姓名]照片">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 研究兴趣 -->
+        <section class="research-interests">
+            <div class="container">
+                <h2 class="section-title">研究兴趣</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">🔬</div>
+                        <h3>[研究方向 1]</h3>
+                        <p>简要描述这个研究方向的内容和你的贡献</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">💡</div>
+                        <h3>[研究方向 2]</h3>
+                        <p>简要描述这个研究方向的内容和你的贡献</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">📊</div>
+                        <h3>[研究方向 3]</h3>
+                        <p>简要描述这个研究方向的内容和你的贡献</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新动态 -->
+        <section class="news">
+            <div class="container">
+                <h2 class="section-title">最新动态</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="news-date">2024年12月</span>
+                        <div class="news-content">
+                            <h3>论文被 [期刊名称] 接收</h3>
+                            <p>我们关于 [研究主题] 的论文已被接收发表。</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2024年11月</span>
+                        <div class="news-content">
+                            <h3>参加 [会议名称]</h3>
+                            <p>在 [地点] 举行的会议上展示了我们的研究成果。</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2024年10月</span>
+                        <div class="news-content">
+                            <h3>[其他重要事件]</h3>
+                            <p>事件描述</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精选出版物 -->
+        <section class="featured-publications">
+            <div class="container">
+                <h2 class="section-title">精选出版物</h2>
+                <div class="publications-list">
+                    <article class="publication-item">
+                        <div class="publication-thumbnail">
+                            <img src="images/paper1-thumbnail.png" alt="论文1图示">
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">[论文标题]</h3>
+                            <p class="publication-authors"><strong>你的姓名</strong>, 合作者1, 合作者2</p>
+                            <p class="publication-venue">[期刊名称], 2024</p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link">📄 PDF</a>
+                                <a href="#" class="pub-link">🔗 DOI</a>
+                                <a href="#" class="pub-link">💻 Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="publication-item">
+                        <div class="publication-thumbnail">
+                            <img src="images/paper2-thumbnail.png" alt="论文2图示">
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">[论文标题]</h3>
+                            <p class="publication-authors"><strong>你的姓名</strong>, 合作者1</p>
+                            <p class="publication-venue">[会议名称], 2024</p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link">📄 PDF</a>
+                                <a href="#" class="pub-link">🔗 DOI</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="view-all-link">
+                    <a href="publications.html" class="btn btn-text">查看所有出版物 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>📧 your.email@university.edu</p>
+                    <p>🏢 [办公室地址]</p>
+                </div>
+                <div class="footer-section">
+                    <h4>学术档案</h4>
+                    <p><a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a></p>
+                    <p><a href="https://orcid.org/YOUR_ORCID" target="_blank">ORCID</a></p>
+                    <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>社交媒体</h4>
+                    <p><a href="https://twitter.com/yourusername" target="_blank">Twitter/X</a></p>
+                    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://researchgate.net/profile/Your_Profile" target="_blank">ResearchGate</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 [你的姓名]. 保留所有权利。</p>
+                <p>最后更新：2024年12月</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
