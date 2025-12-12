@@ -123,7 +123,7 @@ function initScrollAnimations() {
     );
     
     animatedElements.forEach(el => {
-        el.style.opacity = '0';
+        el.style.opacity = '1';
         observer.observe(el);
     });
 }
