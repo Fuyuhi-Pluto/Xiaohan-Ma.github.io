@@ -116,10 +116,7 @@ function initScrollAnimations() {
             }
         });
     }, observerOptions);
-    
-    animatedElements.forEach(el => {
-        observer.observe(el);
-    });
+   
     
     // 观察需要动画的元素
     const animatedElements = document.querySelectorAll(
