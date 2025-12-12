@@ -6,10 +6,175 @@
     <meta name="description" content="Xiaohan Ma - Ph.D. Candidate in Astronomy at Boston University | Research on Plasma Instabilities and Turbulence in Heliosphere">
     <meta name="keywords" content="Xiaohan Ma, Astronomy, Plasma Physics, Heliosphere, MHD Simulations, Boston University">
     <title>Xiaohan Ma - Academic Homepage</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Hero Section Customization */
+        .job-status-large {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: linear-gradient(120deg, #ffd700 40%, #f0c800 60%);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .hero-collaboration {
+            font-size: 1.1rem;
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+        
+        /* Ensure image placeholder on the right */
+        .hero-container {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .hero-text {
+            flex: 1;
+        }
+        
+        .hero-image {
+            flex: 0 0 350px;
+        }
+        
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Education Section */
+        .education {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .education-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .education-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1a365d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-header h3 {
+            color: #1a365d;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        
+        .education-year {
+            color: #1a365d;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .education-institution {
+            color: #2c3e50;
+            font-size: 1.05rem;
+            margin: 0.5rem 0;
+        }
+        
+        .education-advisor {
+            color: #5a6c7d;
+            font-size: 0.95rem;
+            margin: 0.3rem 0 0 0;
+        }
+        
+        /* Honors Section */
+        .honors {
+            padding: 4rem 0;
+        }
+        
+        .honors-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .honor-item {
+            display: flex;
+            gap: 2rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .honor-item:last-child {
+            border-bottom: none;
+        }
+        
+        .honor-year {
+            flex: 0 0 100px;
+            color: #1a365d;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .honor-title {
+            flex: 1;
+            color: #2c3e50;
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-container {
+                flex-direction: column;
+            }
+            
+            .hero-image {
+                flex: 0 0 250px;
+                width: 100%;
+            }
+            
+            .education-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .honor-item {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .honor-year {
+                flex: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -45,10 +210,14 @@
                         <span class="position">Ph.D. Candidate in Astronomy</span> | 
                         <span class="institution">Boston University</span>
                     </p>
+                    <p class="job-status-large">
+                        🎓 Expected Graduation: May 2026 | Seeking Postdoctoral Positions
+                    </p>
                     <p class="hero-description">
-                        My research focuses on exploring <strong>plasma instabilities and turbulence</strong> in various magnetized plasma environments through 
-                        three-dimensional <strong>magnetohydrodynamic simulations</strong> and observations. Currently, I investigate the full evolutionary cycles 
-                        of <strong>Rayleigh–Taylor and Kelvin–Helmholtz instabilities</strong> in the heliosphere.
+                        My research focuses on <strong>plasma instabilities and turbulence</strong> in the heliosphere using three-dimensional <strong>magnetohydrodynamic simulations</strong>. I focus on the evolutionary cycles of <strong>Rayleigh–Taylor and Kelvin–Helmholtz instabilities</strong>—studying their triggering mechanisms, coupled dynamics, and role in driving the transition from large-scale coherent structures to small-scale turbulence.
+                    </p>
+                    <p class="hero-collaboration">
+                        Through close collaboration with researchers at the <strong>University of Michigan</strong> and <strong>University of Alabama in Huntsville</strong>, I have completed three systematic studies that advance our understanding of heliospheric structure and dynamics.
                     </p>
                     <div class="hero-links">
                         <a href="mailto:xhma@bu.edu" class="btn btn-primary">Contact Me</a>
@@ -57,7 +226,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-wrapper">
-                        <img src="images/profile.jpg" alt="Xiaohan Ma" onerror="this..display='none'">
+                        <img src="images/profile.jpg" alt="Xiaohan Ma" onerror="this.style.display='none'">
                         <div class="image-decoration"></div>
                     </div>
                 </div>
@@ -72,17 +241,87 @@
                     <div class="interest-card">
                         <div class="interest-icon">🌌</div>
                         <h3>Plasma Instabilities</h3>
-                        <p>Investigating Rayleigh–Taylor and Kelvin–Helmholtz instabilities in the heliosheath and their coupling mechanisms</p>
+                        <p>Investigating Rayleigh–Taylor and Kelvin–Helmholtz instabilities across different plasma environments, including the heliosphere, Earth's magnetosphere, and the solar wind, and exploring their roles in enhancing magnetic reconnection and particle acceleration.</p>
                     </div>
                     <div class="interest-card">
                         <div class="interest-icon">💫</div>
                         <h3>Plasma Turbulence</h3>
-                        <p>Studying the transition from coherent structures to fully developed turbulence through nonlinear saturation phases</p>
+                        <p>Connecting large-scale instabilities to turbulent cascades and kinetic-scale dissipation, quantitatively analyzing energy transfer, intermittency, and anisotropy, and assessing their impact on particle acceleration.</p>
                     </div>
                     <div class="interest-card">
                         <div class="interest-icon">💻</div>
                         <h3>MHD Simulations</h3>
-                        <p>Developing and applying three-dimensional magnetohydrodynamic models to understand heliospheric dynamics</p>
+                        <p>Developing and applying three-dimensional magnetohydrodynamic (MHD) models to various plasma environments, integrating observational data, and combining physics-based simulations with AI-driven approaches for predictive modeling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>Ph.D. in Astronomy</h3>
+                            <span class="education-year">2020 - 2026 (Expected)</span>
+                        </div>
+                        <p class="education-institution">Boston University, Department of Astronomy</p>
+                        <p class="education-advisor"><strong>Advisor:</strong> Prof. Merav Opher</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>M.S. in Space Physics</h3>
+                            <span class="education-year">2017 - 2020</span>
+                        </div>
+                        <p class="education-institution">Peking University, School of Earth and Space Sciences</p>
+                        <p class="education-advisor"><strong>Advisor:</strong> Prof. Qiugang Zong</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>B.S. in Space Physics</h3>
+                            <span class="education-year">2013 - 2017</span>
+                        </div>
+                        <p class="education-institution">Peking University, School of Earth and Space Sciences</p>
+                        <p class="education-advisor"><strong>Advisor:</strong> Prof. Qiugang Zong</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors & Awards -->
+        <section class="honors">
+            <div class="container">
+                <h2 class="section-title">Honors & Awards</h2>
+                <div class="honors-list">
+                    <div class="honor-item">
+                        <span class="honor-year">05.2021</span>
+                        <p class="honor-title">NASA Earth and Space Science Fellowship</p>
+                    </div>
+                    <div class="honor-item">
+                        <span class="honor-year">02.2020</span>
+                        <p class="honor-title">Dean's Fellowship of Boston University</p>
+                    </div>
+                    <div class="honor-item">
+                        <span class="honor-year">12.2018</span>
+                        <p class="honor-title">The Award of "Outstanding Scientific Research" of Peking University</p>
+                    </div>
+                    <div class="honor-item">
+                        <span class="honor-year">11.2017</span>
+                        <p class="honor-title">"LongRuan GIS" Scholarship of School of Earth and Space Science, Peking University</p>
+                    </div>
+                    <div class="honor-item">
+                        <span class="honor-year">05.2015</span>
+                        <p class="honor-title">Second-grade Award of "Academic Wishing Star" of School of Earth and Space Science, PKU</p>
+                    </div>
+                    <div class="honor-item">
+                        <span class="honor-year">05.2014</span>
+                        <p class="honor-title">First-grade Award of "Academic Wishing Star" of School of Earth and Space Science, PKU</p>
+                    </div>
+                    <div class="honor-item">
+                        <span class="honor-year">04.2014</span>
+                        <p class="honor-title">The Award of "Merit Student" of Peking University</p>
                     </div>
                 </div>
             </div>
@@ -94,7 +333,14 @@
                 <h2 class="section-title">News & Updates</h2>
                 <div class="news-list">
                     <div class="news-item">
-                        <span class="news-date">Jan 2025</span>
+                        <span class="news-date">Dec 2025</span>
+                        <div class="news-content">
+                            <h3>AGU25 Oral Presentation</h3>
+                            <p>Presenting "The Coupling and Evolution of Kelvin-Helmholtz and Rayleigh-Taylor Instabilities in the Heliosheath" at AGU Fall Meeting in New Orleans.</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">July 2025</span>
                         <div class="news-content">
                             <h3>New Paper Published in ApJ</h3>
                             <p>Our paper "The Coupling and Evolution of Kelvin–Helmholtz and Rayleigh–Taylor Instabilities in the Heliosheath" has been published in The Astrophysical Journal.</p>
@@ -103,15 +349,15 @@
                     <div class="news-item">
                         <span class="news-date">Dec 2024</span>
                         <div class="news-content">
-                            <h3>AGU Fall Meeting 2024</h3>
-                            <p>Presented poster "Instabilities along the axis of the Heliospheric Jets" at AGU Fall Meeting in Washington, D.C.</p>
+                            <h3>New Paper Published in ApJ</h3>
+                            <p>Our paper "Instabilities along the Axis of the Heliospheric Jets" has been published in The Astrophysical Journal.</p>
                         </div>
                     </div>
                     <div class="news-item">
-                        <span class="news-date">Sep 2024</span>
+                        <span class="news-date">Dec 2024</span>
                         <div class="news-content">
-                            <h3>Paper Published in ApJ</h3>
-                            <p>Published "Instabilities along the Axis of the Heliospheric Jets" in The Astrophysical Journal, Volume 978.</p>
+                            <h3>AGU Fall Meeting 2024</h3>
+                            <p>Presented a poster on "Instabilities along the axis of the Heliospheric Jets" at AGU Fall Meeting in Washington, D.C.</p>
                         </div>
                     </div>
                 </div>
@@ -125,35 +371,50 @@
                 <div class="publications-list">
                     <article class="publication-item">
                         <div class="publication-thumbnail">
-                            <img src="images/paper-apj-2025.png" alt="Paper 2025" onerror="this..display='none'">
+                            <img src="images/paper-apj-2025.png" alt="Paper 2025" onerror="this.style.display='none'">
                         </div>
                         <div class="publication-content">
                             <h3 class="publication-title">The Coupling and Evolution of Kelvin–Helmholtz and Rayleigh–Taylor Instabilities in the Heliosheath</h3>
                             <p class="publication-authors"><strong>Ma X</strong>, Opher M, Kornbleuth M</p>
                             <p class="publication-venue">The Astrophysical Journal, 2025, 988(2): 248</p>
                             <div class="publication-links">
-                                <a href="#" class="pub-link">📄 PDF</a>
-                                <a href="https://doi.org/10.3847/1538-4357/ad9b9c" class="pub-link" target="_blank">🔗 DOI</a>
+                                <a href="files/Ma2025_ApJ.pdf" class="pub-link">📄 PDF</a>
+                                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ade881" class="pub-link" target="_blank">🔗 DOI</a>
                             </div>
                         </div>
                     </article>
                     <article class="publication-item">
                         <div class="publication-thumbnail">
-                            <img src="images/paper-apj-2024.png" alt="Paper 2024" onerror="this..display='none'">
+                            <img src="images/paper-apj-2024.png" alt="Paper 2024" onerror="this.style.display='none'">
                         </div>
                         <div class="publication-content">
                             <h3 class="publication-title">Instabilities along the Axis of the Heliospheric Jets</h3>
                             <p class="publication-authors"><strong>Ma X</strong>, Opher M, Kornbleuth M, et al.</p>
                             <p class="publication-venue">The Astrophysical Journal, 2024, 978(1): 57</p>
                             <div class="publication-links">
-                                <a href="#" class="pub-link">📄 PDF</a>
-                                <a href="https://doi.org/10.3847/1538-4357/ad8b4c" class="pub-link" target="_blank">🔗 DOI</a>
+                                <a href="files/Ma2024_ApJ.pdf" class="pub-link">📄 PDF</a>
+                                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad93a5" class="pub-link" target="_blank">🔗 DOI</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="view-all-link">
                     <a href="publications.html" class="btn btn-text">View All Publications →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beyond Research -->
+        <section class="beyond-research">
+            <div class="container">
+                <h2 class="section-title">Beyond Research</h2>
+                <div class="beyond-content">
+                    <p>
+                        Beyond my academic pursuits, I am actively engaged in team building and organizational leadership. As captain of the Peking University New England Alumni Dragon Boat Team, I developed an automated member management system and led the team to multiple record-breaking performances in regional competitions.
+                    </p>
+                    <p>
+                        I have served as a core member of several student organizations at Peking University, including the Kendo Club, Graduate Student Association, and Alumni Association, where I organized numerous large-scale events with over 300 participants. From 2015 to 2020, I founded and managed the WeChat public account for Peking University's Institute of Space Physics and Applied Technology, promoting science communication and making research findings accessible to broader audiences.
+                    </p>
                 </div>
             </div>
         </section>
@@ -172,15 +433,15 @@
                 </div>
                 <div class="footer-section">
                     <h4>Academic Profiles</h4>
-                    <p><a href="https://scholar.google.com" target="_blank">Google Scholar</a></p>
+                    <p><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></p>
                     <p><a href="https://orcid.org/0000-0003-0007-757X" target="_blank">ORCID</a></p>
-                    <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+                    <p><a href="https://github.com/Fuyuhi-Pluto" target="_blank">GitHub</a></p>
                 </div>
                 <div class="footer-section">
                     <h4>Connect</h4>
-                    <p><a href="https://twitter.com/yourusername" target="_blank">Twitter/X</a></p>
-                    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
-                    <p><a href="https://researchgate.net/profile/Your_Profile" target="_blank">ResearchGate</a></p>
+                    <p><a href="https://twitter.com/" target="_blank">Twitter/X</a></p>
+                    <p><a href="https://linkedin.com/" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://researchgate.net/" target="_blank">ResearchGate</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
