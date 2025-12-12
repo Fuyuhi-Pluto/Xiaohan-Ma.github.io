@@ -108,6 +108,8 @@ function initScrollAnimations() {
         rootMargin: '0px 0px -50px 0px'
     };
     
+    const animatedElements = document.querySelectorAll('.interest-card');
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -116,6 +118,10 @@ function initScrollAnimations() {
             }
         });
     }, observerOptions);
+    
+    animatedElements.forEach(el => {
+        observer.observe(el);
+    });
     
     // 观察需要动画的元素
     const animatedElements = document.querySelectorAll(
