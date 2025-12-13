@@ -6,8 +6,126 @@
     <title>Publications - Xiaohan Ma</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile-nav-styles.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Compact publication entry */
+        .publication-entry {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .publication-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .pub-number {
+            font-weight: 600;
+            color: var(--text-light);
+            font-family: var(--font-serif);
+            font-size: 1rem;
+        }
+        
+        .pub-title {
+            font-size: 1.0625rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+            color: var(--text-dark);
+        }
+        
+        .pub-authors {
+            margin-bottom: 0.25rem;
+            color: var(--text-medium);
+            font-size: 0.9375rem;
+        }
+        
+        .pub-venue {
+            color: var(--text-medium);
+            font-size: 0.9375rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .pub-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.75rem;
+        }
+        
+        .pub-abstract {
+            margin-top: 0.75rem;
+        }
+        
+        .abstract-toggle {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            padding: 0.375rem 0.875rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+        
+        .abstract-toggle:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .abstract-content {
+            display: none;
+            margin-top: 0.75rem;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 4px;
+            border-left: 3px solid var(--accent-color);
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+        
+        .abstract-content.show {
+            display: block;
+        }
+        
+        /* Compact presentation item */
+        .presentation-item {
+            display: flex;
+            gap: 1.25rem;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .presentation-item:last-child {
+            border-bottom: none;
+        }
+        
+        .presentation-type {
+            flex-shrink: 0;
+            padding: 0.375rem 0.875rem;
+            border-radius: 6px;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            height: fit-content;
+        }
+        
+        .presentation-content h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        
+        .presentation-content p {
+            margin: 0;
+            color: var(--text-medium);
+            font-size: 0.9375rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -46,7 +164,7 @@
                 <div class="year-group">
                     <h3 class="year-title">2025</h3>
                     
-                    <article class="publication-entry" id="apj2025">
+                    <article class="publication-entry">
                         <div class="pub-number">[1]</div>
                         <div class="pub-content">
                             <h4 class="pub-title">The Coupling and Evolution of Kelvin–Helmholtz and Rayleigh–Taylor Instabilities in the Heliosheath</h4>
@@ -58,13 +176,6 @@
                                 <span class="impact-factor">IF: 4.9</span>
                             </p>
                             <div class="pub-links">
-                                <a href="#" class="pub-link pdf">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                        <polyline points="14 2 14 8 20 8"></polyline>
-                                    </svg>
-                                    PDF
-                                </a>
                                 <a href="https://doi.org/10.3847/1538-4357/ad9b9c" class="pub-link doi" target="_blank">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
@@ -76,7 +187,7 @@
                             <div class="pub-abstract">
                                 <button class="abstract-toggle">Show Abstract ▼</button>
                                 <div class="abstract-content">
-                                    <p>We investigate the coupling and evolution of Kelvin–Helmholtz (KH) and Rayleigh–Taylor (RT) instabilities in the heliosheath using three-dimensional magnetohydrodynamic simulations. Our results reveal periodic growth and later decoupling of these instabilities, and demonstrate that their nonlinear growth drives turbulence and can lead to heliotail separation.</p>
+                                    <p>The shape and structure of the heliosphere remain subjects of ongoing debate, with current models differing on how far the heliospheric jets that form the two-lobe structure extend down the heliotail and whether the surrounding interstellar medium can penetrate the region between the lobes. Rayleigh–Taylor (RT) and Kelvin–Helmholtz (KH) instabilities along the axis of the heliospheric jets have been proposed as key drivers of turbulence in the heliosheath (HS). In this work, we present results from 225 yr MHD simulations that reveal periodic variations in solar wind speed and magnetic field within the HS, coinciding with the cyclic growth of RT and KH instabilities. At the onset of each cycle, the instabilities initially develop simultaneously in the direction normal to the plane of the heliospheric jet, with an average timescale of ∼4.2 yr. As the system evolves over ∼11.1 yr, RT and KH modes decouple, with KH modes subsequently dominating beyond the high-density region and leading to a reduced growth rate, corresponding to a timescale of ∼12.9 yr. These findings suggest that RT and KH instabilities can coevolve and reoccur periodically, contributing to turbulence generation in the HS. Their nonlinear development may play a fundamental role in shaping the large-scale structure of the heliosphere, particularly in the formation and evolution of the open heliospheric tail.</p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +198,7 @@
                 <div class="year-group">
                     <h3 class="year-title">2024</h3>
                     
-                    <article class="publication-entry" id="apj2024">
+                    <article class="publication-entry">
                         <div class="pub-number">[2]</div>
                         <div class="pub-content">
                             <h4 class="pub-title">Instabilities along the Axis of the Heliospheric Jets</h4>
@@ -99,13 +210,12 @@
                                 <span class="impact-factor">IF: 4.9</span>
                             </p>
                             <div class="pub-links">
-                                <a href="#" class="pub-link pdf">PDF</a>
                                 <a href="https://doi.org/10.3847/1538-4357/ad8b4c" class="pub-link doi" target="_blank">DOI</a>
                             </div>
                             <div class="pub-abstract">
                                 <button class="abstract-toggle">Show Abstract ▼</button>
                                 <div class="abstract-content">
-                                    <p>We report the discovery and characterization of plasma instabilities along the axis of heliospheric jets. Using MHD simulations, we identify conditions favorable for instability development and analyze their impact on heliospheric structure.</p>
+                                    <p>The heliosphere is influenced by the interaction of neutral hydrogen atoms from the interstellar medium with protons in the heliosheath (HS). The confinement by the solar magnetic field of the HS plasma forms distinct north and south heliospheric jets. Previous global MHD simulations of the heliosphere reveal that instabilities can develop in the heliospheric jets and make them become unstable, giving rise to large-scale turbulence. In this study, we show that there is a low-speed region of solar wind in the HS that provides a precondition for instabilities to develop. The low-speed region is formed due to charge exchange and magnetic tension. This region allows sufficient time for the instabilities to develop and induces a shear flow inside the HS leading to the development of a Kelvin–Helmholtz (K-H) instability. The estimated growth timescale of the K-H instability based on the simulation results is around 5–7 yr. Understanding the development of the instabilities in the HS is crucial for comprehending the dynamic processes within the HS and the structure of the heliosphere.</p>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +226,7 @@
                 <div class="year-group">
                     <h3 class="year-title">2021</h3>
                     
-                    <article class="publication-entry" id="jgr2021">
+                    <article class="publication-entry">
                         <div class="pub-number">[3]</div>
                         <div class="pub-content">
                             <h4 class="pub-title">Energetic electron enhancement and dropout echoes induced by solar wind dynamic pressure decrease: The effect of phase space density profile</h4>
@@ -128,13 +238,12 @@
                                 <span class="impact-factor">IF: 2.8</span>
                             </p>
                             <div class="pub-links">
-                                <a href="#" class="pub-link pdf">PDF</a>
                                 <a href="https://doi.org/10.1029/2020JA028863" class="pub-link doi" target="_blank">DOI</a>
                             </div>
                             <div class="pub-abstract">
                                 <button class="abstract-toggle">Show Abstract ▼</button>
                                 <div class="abstract-content">
-                                    <p>We analyze satellite observations to understand electron drift echoes and demonstrate that electron phase space density is a key driver of energetic electron flux variations during solar wind dynamic pressure decreases.</p>
+                                    <p>The interplanetary (IP) shock with the sudden increase of solar wind dynamic pressure can cause the acceleration and transportation of energetic electrons in the inner magnetosphere. In this study, we further examine the influence of the sudden drop of solar wind dynamic pressure on magnetospheric energetic particles, through case study of energetic electron drift echoes and statistics with 25 cases from 2012 to 2017. We found that there were both dropout and enhancement drift echoes of electrons in some dynamic pressure decrease events, while other events only show electron dropout drift echoes. In addition, we analyzed the electron phase space density (PSD) and found that the radial profile of electron PSD were different for the two types of events, suggesting that the electron PSD plays an important role in the variations of energy electron fluxes induced by the dynamics pressure decrease. The results of this study, combined with previous studies of energetic electron dynamics caused by IP shocks, can provide a more general picture of both solar wind dynamic pressure decrease and increase effects on the energetic electrons.</p>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +254,7 @@
                 <div class="year-group">
                     <h3 class="year-title">2019</h3>
                     
-                    <article class="publication-entry" id="jgr2019">
+                    <article class="publication-entry">
                         <div class="pub-number">[4]</div>
                         <div class="pub-content">
                             <h4 class="pub-title">The intense substorm incidence in response to interplanetary shock impacts and influence on energetic electron fluxes at geosynchronous orbit</h4>
@@ -157,13 +266,12 @@
                                 <span class="impact-factor">IF: 2.8</span>
                             </p>
                             <div class="pub-links">
-                                <a href="#" class="pub-link pdf">PDF</a>
                                 <a href="https://doi.org/10.1029/2018JA026426" class="pub-link doi" target="_blank">DOI</a>
                             </div>
                             <div class="pub-abstract">
                                 <button class="abstract-toggle">Show Abstract ▼</button>
                                 <div class="abstract-content">
-                                    <p>Statistical analysis of interplanetary shock impacts on substorm incidence and their influence on energetic electron fluxes at geosynchronous orbit, revealing key coupling processes in space weather.</p>
+                                    <p>The interaction between interplanetary (IP) shocks and the Earth's magnetosphere would generate/excite various types of geomagnetic phenomena. In order to analyze what kind of IP shock is more likely to trigger intense substorms (SME/AE > 1,000 nT) and how the energetic electrons response to intense substorms at geosynchronous orbit, we perform a systematic survey of 246 IP shock events using SuperMag and LANL observations between 2001 and 2013. The statistical analysis shows that intense substorms (SME > 1,000 nT) triggered by IP shocks are most likely to occur under the southward interplanetary magnetic field (IMF) and fast solar wind preconditions. Besides, intense substorms after the IP shock arrival are much more likely to occur when IMF points toward (away from) the Sun around spring (autumn) equinox, which can be ascribed to the Russell-McPherron effect. Thus, the IMF Bs precondition of an IP shock and the Russell-McPherron effect can be considered as precursors of an intense substorm. Furthermore, after the shock arrival associated with intense substorms, low-energy (<200 keV) electron fluxes increase significantly at geosynchronous orbit, and high-energy (>200 keV) electron fluxes decrease. The spectral index becomes softer with intense substorms and remains almost unchanged with moderate substorms no matter whether the IMF precondition is southward or northward.</p>
                                 </div>
                             </div>
                         </div>
@@ -286,5 +394,28 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Abstract toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const abstractToggles = document.querySelectorAll('.abstract-toggle');
+            
+            abstractToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const abstractContent = this.nextElementSibling;
+                    
+                    if (abstractContent && abstractContent.classList.contains('abstract-content')) {
+                        abstractContent.classList.toggle('show');
+                        
+                        // Update button text - stay in English
+                        if (abstractContent.classList.contains('show')) {
+                            this.textContent = 'Hide Abstract ▲';
+                        } else {
+                            this.textContent = 'Show Abstract ▼';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
